@@ -1,0 +1,38 @@
+@APIProject_HostAddress = http://localhost:5068
+
+GET {{APIProject_HostAddress}}/weatherforecast/
+Accept: application/json
+###
+
+GET {{APIProject_HostAddress}}/lolchampion/
+Accept: application/json
+###
+
+GET {{APIProject_HostAddress}}/lolchampion/3
+Accept: application/json
+###
+
+POST {{APIProject_HostAddress}}/lolchampion/
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "Camille",
+    "rolChampion": "Top"
+}
+
+###
+
+PUT {{APIProject_HostAddress}}/lolchampion/3
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "Darius",
+    "rolChampion": "Top"
+}
+###
+
+DELETE {{APIProject_HostAddress}}/lolchampion/3
+Content-Type: application/json
+
